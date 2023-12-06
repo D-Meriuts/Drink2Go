@@ -1,1 +1,7 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
+body {
+  background-color: var(--Lightest-Grey);
+  color: var(--Base-Black);
+  font-family: var(--font-main);
+  min-width: var(--min-width);
+}

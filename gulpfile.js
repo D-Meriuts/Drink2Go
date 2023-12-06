@@ -6,6 +6,8 @@ import { nunjucksCompile } from 'gulp-nunjucks';
 import htmlmin from 'gulp-htmlmin';
 import * as dartSass from 'sass';
 import gulpSass from 'gulp-sass';
+import sassGlob from 'gulp-sass-glob';
+
 import postcss from 'gulp-postcss';
 import postUrl from 'postcss-url';
 import autoprefixer from 'autoprefixer';
@@ -51,6 +53,7 @@ export function lintBem() {
 export function processStyles() {
   return src(`${PATH_TO_SOURCE}styles/*.scss`, { sourcemaps: isDevelopment })
     .pipe(plumber())
+    .pipe(sassGlob())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
       postUrl({ assetsPath: '../' }),
