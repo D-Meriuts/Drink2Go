@@ -1,9 +1,12 @@
 /* GLOBAL */
-@import "./global/variables.scss";
+@import "./global/reset.scss";
+@import "./global/vars.scss";
 @import "./global/global.scss";
+@import "./global/utils.scss";
+@import "./global/containers.scss";
+@import "./global/sticky-footer.scss";
 @import "./global/fonts.scss";
-@import "./global/base.scss";
+
 
 /* BLOCKS */
-// @import "./blocks/header.scss";
 @import "./blocks/*.scss";

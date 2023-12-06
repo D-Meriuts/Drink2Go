@@ -1,4 +1,9 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--Lightest-Grey);
   color: var(--Base-Black);
