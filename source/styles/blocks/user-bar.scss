@@ -1,0 +1,50 @@
+.user-bar {
+  display: flex;
+  justify-content: flex-end;
+
+  @media (min-width: $desktop-width) {
+    column-gap: 20px;
+  }
+}
+
+.user-bar__item {
+  display: flex;
+  column-gap: 8px;
+  padding: 22px;
+  cursor: pointer;
+  border: none;
+
+  &:active {
+    background-color: var(--Base-Secondary);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 32px 20px;
+  }
+}
+
+.user-bar__link {
+  height: 16px;
+}
+
+.user-bar__text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-bar__item:hover svg {
+    fill: var(--Base-Primary);
+  }
+
+  .user-bar__item:hover .user-bar__text {
+    color: var(--Base-Primary);
+  }
+}

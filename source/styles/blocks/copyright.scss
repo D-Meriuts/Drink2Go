@@ -1,0 +1,35 @@
+.copyright,
+.copyright__link {
+  color: var(--Base-Grey);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  /* 133.333% */
+}
+
+.copyright__text {
+  text-align: center;
+}
+
+.copyright__link{
+  .copyright__image {
+    vertical-align: middle;
+    fill: var(--Base-Grey);
+  }
+}
+.copyright__link:hover,
+.copyright__link:focus {
+  color: var(--Base-Primary);
+
+  .copyright__image {
+    fill: var(--Base-Primary);
+  }
+}
+
+.copyright__link:active {
+  color: var(--Primary-Darker);
+
+  .copyright__image {
+    fill: var(--Primary-Darker);
+  }
+}

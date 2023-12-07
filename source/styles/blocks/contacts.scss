@@ -1,0 +1,39 @@
+// .contacts {}
+
+
+.contacts__title {
+  margin-bottom: 20px;
+}
+
+.contacts__container {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  align-items: flex-start;
+  row-gap: 16px;
+}
+
+.contacts__list {
+  display: inline-flex;
+  align-items: flex-start;
+  column-gap: 6px;
+
+}
+
+.copyright__image {
+  flex: 1 0 13px;
+
+}
+
+.contacts__address,
+.contacts__phone {
+  // padding-left: 19px;
+
+  color: var(--Base-Black);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  /* 142.857% */
+}
+
+// .contacts__phone {}
