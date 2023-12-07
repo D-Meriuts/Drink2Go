@@ -1,4 +1,48 @@
 .header {
-  background-color: var(--Base-Primary);
-  color: var(--Base-Black);
+  background-color: var(--Base-White);
+}
+
+.header--nojs {
+  .burger-toggle {
+    display: none;
+  }
+
+  .navigation {
+    display: block;
+  }
+}
+
+.header__logo {
+  padding: 12px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: nowrap;
+    padding: 0 20px;
+  }
+}
+
+.header__navigation {
+  width: 100%;
+  flex-grow: 1;
+  order: 1;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    order: 0;
+  }
+}
+
+.header__user-bar {
+  margin-left: auto;
 }

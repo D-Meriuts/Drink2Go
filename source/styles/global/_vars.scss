@@ -4,10 +4,11 @@
   --container-width: 1200px;
   --container-padding: 20px;
   --container-padding-desktop: 130px;
+  --border-radius: 4px;
 
   // fonts
-  // --font-main: "Montserrat", "Arial", sans-serif;
-  --font-main: "Montserrat";
+  --font-main: "Montserrat", "Arial", sans-serif;
+  // --font-main: "Montserrat";
 
   // Base Colors
   --Base-White: #ffffff;
@@ -34,7 +35,9 @@
 
   // width
   --min-width: 320px;
-  --desktop-size: 1440px;
+  // --desktop-size: 1440px;
+  --desktop-size: 1360px;
+
   --tablet-size: 768px;
   --mobile-size: 320px;
 
@@ -49,6 +52,6 @@
 }
 
 // viewports
-$desktop-width: 1440px;
+$desktop-width: 1360px;
 $tablet-width: 768px;
 $mobile-width-only: 767px;
