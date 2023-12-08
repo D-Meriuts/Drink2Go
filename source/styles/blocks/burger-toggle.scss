@@ -56,7 +56,8 @@
 
   border-radius: var(--radius);
   background-color: var(--Base-Black);
-  transition: transform var(--time) ease-in,
+  transition:
+    transform var(--time) ease-in,
     top var(--time) linear var(--time);
 }
 
@@ -76,7 +77,8 @@
 .burger-toggle__icon--active::before,
 .burger-toggle__icon--active::after {
   top: 0;
-  transition: top var(--time) linear,
+  transition:
+    top var(--time) linear,
     transform var(--time) ease-in var(--time);
 }
 

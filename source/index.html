@@ -9,25 +9,24 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
 
-  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
 
-
-  <!-- <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
+<!--
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font" crossorigin="anonymous"> -->
 
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet">
+    rel="stylesheet"> -->
 
 
-  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="favicons/apple.png"> <!-- 180×180 -->
+  <link rel="apple-touch-icon" href="favicons/apple.png"><!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
@@ -39,11 +38,11 @@
       <div class="header__container">
 
         <div class="header__row">
-          <div class="header__logo logo logo__header">
+          <div class="header__logo logo logo--header">
             <a href="#!">
               <picture>
-                <source media="(min-width: 1440px)" srcset="images/logo_desktop.svg" width="170" height="36">
-                <source media="(min-width: 768px)" srcset="images/logo_tablet.svg" width="82" height="36">
+                <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo_desktop.svg" width="170" height="36">
+                <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo_tablet.svg" width="82" height="36">
                 <img class="logo__image" src="images/logo_mobile.svg" alt="логотип сайта Drink2Go" width="32"
                   height="36">
               </picture>
@@ -65,7 +64,7 @@
             <li class="user-bar__item">
               <a class="user-bar__link" href="#!">
                 <svg class="user-bar__image" width="16" height="16">
-                  <use xlink:href="images/icons/stack.svg#user"></use>
+                  <use href="images/icons/stack.svg#user"></use>
                 </svg>
                 <span class="user-bar__text">Войти</span>
 
@@ -74,7 +73,7 @@
             <li class="user-bar__item">
               <a class="user-bar__link" href="#!">
                 <svg width="16" height="16">
-                  <use xlink:href="images/icons/stack.svg#cart"></use>
+                  <use href="images/icons/stack.svg#cart"></use>
                 </svg>
                 <span class="user-bar__text">Корзина</span>
 
@@ -82,8 +81,13 @@
             </li>
           </ul>
 
-          <button class="header__toggle user-bar__toggle burger-toggle">
-            <div class="burger-toggle__icon"></div>
+          <!-- <button class="header__toggle user-bar__toggle burger-toggle">
+            <span class="burger-toggle__icon"></span>
+            <span class="visually-hidden">Открыть меню</span>
+          </button> -->
+
+          <button class="burger-toggle" type="button">
+            <span class="burger-toggle__icon"></span>
             <span class="visually-hidden">Открыть меню</span>
           </button>
 
@@ -93,11 +97,11 @@
   </header>
 
   <main>
-    <h1 class="visually-hidden"> Drink2Go Интернет-магазин кофейных напитков</h1>
-    <section class="slider"> слайдер</section>
-    <section class="features"> преимущества</section>
-    <section class="catalog"> каталог</section>
-    <section class="map map--nojs" id="map" style="min-height: 420px;">
+    <h1 class="visually-hidden">Drink2Go Интернет-магазин кофейных напитков</h1>
+    <section class="slider"><h2>слайдер</h2></section>
+    <section class="features"><h2>преимущества</h2></section>
+    <section class="catalog"><h2>каталог</h2></section>
+    <section class="map map--nojs" id="map" style="min-height: 420px;"><h2>карта</h2>
 
     </section>
 
@@ -110,10 +114,10 @@
     <h2 class="visually-hidden">Footer</h2>
 
     <div class="footer__container">
-      <div class="footer__logo logo logo__footer">
+      <div class="footer__logo logo logo--footer">
         <a href="#!">
           <picture>
-            <source media="(min-width: 768px)" srcset="images/logo_desktop.svg" width="170" height="36">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo_desktop.svg" width="170" height="36">
             <img class="logo__image" src="images/logo_tablet.svg" alt="логотип сайта Drink2Go" width="82" height="36">
           </picture>
         </a>
@@ -125,7 +129,7 @@
           <li class="social__item">
             <a class="social__link" href="#!" aria-label="VK">
               <svg class="social__link-logo" width="20" height="20">
-                <use xlink:href="images/icons/stack.svg#social_vk"></use>
+                <use href="images/icons/stack.svg#social_vk"></use>
               </svg>
             </a>
             <span class="visually-hidden">ВКонтакте</span>
@@ -134,7 +138,7 @@
           <li class="social__item">
             <a class="social__link" href="#!" aria-label="Pinterest">
               <svg class="social__link-logo" width="22" height="22">
-                <use xlink:href="images/icons/stack.svg#social_pinterest"></use>
+                <use href="images/icons/stack.svg#social_pinterest"></use>
               </svg>
             </a>
             <span class="visually-hidden">Пинтерест</span>
@@ -143,7 +147,7 @@
           <li class="social__item">
             <a class="social__link" href="#!" aria-label="OK">
               <svg class="social__link-logo" width="20" height="20">
-                <use xlink:href="images/icons/stack.svg#social_ok"></use>
+                <use href="images/icons/stack.svg#social_ok"></use>
               </svg>
             </a>
             <span class="visually-hidden">Одноклассники</span>
@@ -165,9 +169,9 @@
     <div class="footer__media media">
       <h4 class="footer__title">Медиа</h4>
       <ul class="footer__list">
-        <li class="footer__item"><a class="footer__link" href="#!"> Блог</a></li>
-        <li class="footer__item"><a class="footer__link" href="#!"> Информация для СМИ</a></li>
-        <li class="footer__item"><a class="footer__link" href="#!"> Правовая информация</a></li>
+        <li class="footer__item"><a class="footer__link" href="#!">Блог</a></li>
+        <li class="footer__item"><a class="footer__link" href="#!">Информация для СМИ</a></li>
+        <li class="footer__item"><a class="footer__link" href="#!">Правовая информация</a></li>
       </ul>
     </div>
 
@@ -175,14 +179,14 @@
       <h4 class="footer__title">Контакты</h4>
       <ul class="contacts__container">
         <li class="contacts__list">
-          <svg class="copyright__image" width="13" height="16">
-            <use xlink:href="images/icons/stack.svg#address_icon"></use>
+          <svg class="contacts__icon" width="13" height="16">
+            <use href="images/icons/stack.svg#address_icon"></use>
           </svg>
           <p class="contacts__address">Санкт-Петербург, набережная реки Карповки, дом 5</p>
         </li>
         <li class="contacts__list">
-          <svg class="copyright__image" width="13" height="16">
-            <use xlink:href="images/icons/stack.svg#phone_icon"></use>
+          <svg class="contacts__icon" width="13" height="16">
+            <use href="images/icons/stack.svg#phone_icon"></use>
           </svg>
           <p><a class="contacts__phone" href="tel:+79999999999">+7 (999) 999-99-99</a></p>
         </li>
@@ -193,10 +197,10 @@
       <p class="copyright__text">Разработано в
         <span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
-            aria-label="Перейти на лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация»" target="_blank">
+            aria-label="Перейти на лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация»" target="_blank" rel="noopener noreferrer">
             HTML Academy
-            <svg class="copyright__image" width="12" height="16">
-              <use xlink:href="images/icons/stack.svg#logo_html_academy"></use>
+            <svg class="copyright__icon" width="12" height="16">
+              <use href="images/icons/stack.svg#logo_html_academy"></use>
             </svg>
           </a>
         </span>
@@ -205,9 +209,9 @@
 
   </footer>
 
+  <script src="scripts/index.js" defer></script>
   <script src="vendor/leaflet/leaflet.js"></script>
 
-  <script src="scripts/index.js" defer></script>
 </body>
 
 </html>

@@ -1,5 +1,6 @@
-function map() {
+function createMap() {
   document.querySelector('.map').classList.remove('map--nojs');
+  const L = window.L;
 
   const map = L.map('map')
     .setView({
@@ -14,7 +15,7 @@ function map() {
     },
   ).addTo(map);
 
-  const point = [
+  const points = [
     {
       title: 'Drink2Go',
       adress: 'Санкт-Петербург, набережная реки Карповки, дом 5',
@@ -32,7 +33,7 @@ function map() {
 <p class="balloon__lat-lng">Координаты: ${lat}, ${lng}</p>
 </section>`;
 
-  point.forEach((point) => {
+  points.forEach((point) => {
     const { lat, lng } = point;
 
     const icon = L.icon({
@@ -63,4 +64,4 @@ function map() {
 
 }
 
-export default map;
+export default createMap;

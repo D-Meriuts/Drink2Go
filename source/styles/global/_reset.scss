@@ -22,15 +22,7 @@ a:visited {
 a:hover {
   text-decoration: none;
 }
-
-a:focus {
-  outline: 2px var(--Base-Primary) solid;
-  // padding: 2px 2px 0
-  // outline: none;
-}
-
 /* Common */
-
 // aside,
 // nav,
 // footer,
@@ -39,7 +31,6 @@ a:focus {
 // main {
 //   display: block;
 // }
-
 // h1,
 // h2,
 // h3,
@@ -50,7 +41,6 @@ a:focus {
 //   font-size: inherit;
 //   font-weight: inherit;
 // }
-
 ul,
 ul li {
   list-style: none;
@@ -65,7 +55,6 @@ svg {
   max-width: 100%;
   height: auto;
 }
-
 // address {
 //   font-style: normal;
 // }

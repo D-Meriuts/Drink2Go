@@ -1,4 +1,4 @@
-.logo__header {
+.logo--header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -14,7 +14,7 @@
   }
 }
 
-.logo__header .logo__text {
+.logo--header .logo__text {
   @media (min-width: $desktop-width) {
     padding: 24px 0;
     width: 130px;
@@ -24,10 +24,9 @@
     line-height: 16px;
     /* 133.333% */
   }
-
 }
 
-.logo__footer .logo__text {
+.logo--footer .logo__text {
   @media (min-width: $desktop-width) {
 
     font-size: 14px;

@@ -10,7 +10,7 @@ function navigation() {
   navBtn.onclick = function () {
     nav.classList.toggle('navigation--open');
     menuIcon.classList.toggle('burger-toggle__icon--active');
-    container.classList.toggle('header__container--open')
+    container.classList.toggle('header__container--open');
   };
 }
 

@@ -4,6 +4,6 @@ import navigation from './modules/navigation';
 navigation();
 
 
-import map from './modules/map';
+import createMap from './modules/map';
 
-map();
+createMap();

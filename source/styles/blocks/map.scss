@@ -1,5 +1,9 @@
+// импорт стилей для leaflet
+@import "../vendor/leaflet/leaflet.css";
+
 .map {
   min-height: 420px;
+
   @media (min-width: $tablet-width) {
     height: 480px;
   }
@@ -11,7 +15,7 @@
 
 .map--nojs {
   min-height: 420px;
-  background-color: #999;
+  background-color: #999999;
   background-image:
     image-set(
       url("../../images/map_bg@2x.webp") type("image/webp") 2x,

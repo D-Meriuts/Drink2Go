@@ -1,4 +1,3 @@
-
 .social__list {
   display: flex;
   column-gap: 20px;
@@ -19,23 +18,6 @@
   border: none;
   border-radius: var(--border-radius);
   background-color: transparent;
-
-
-  &:active {
-    background-color: var(--Base-Secondary);
-  }
-
-  // @media (min-width: $tablet-width) {
-  //   padding: 32px 22px;
-  // }
-
-  // @media (min-width: $desktop-width) {
-  //   padding: 32px 20px;
-  // }
-}
-
-.social__link-logo {
-  fill: var(--Base-Grey);
 }
 
 .social__item:hover,
@@ -49,4 +31,8 @@
 
 .social__item:active {
   background-color: var(--Primary-Opacity);
+}
+
+.social__link-logo {
+  fill: var(--Base-Grey);
 }

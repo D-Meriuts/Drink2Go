@@ -10,7 +10,9 @@
   line-height: 32px;
 }
 
-.balloon__text, .balloon__phone, .balloon__lat-lng {
+.balloon__text,
+.balloon__phone,
+.balloon__lat-lng {
   color: var(--Base-Black);
   font-size: 14px;
   font-weight: 400;
