@@ -111,10 +111,8 @@ export function optimizeRaster() {
 
 export function optimizeVector() {
   return src([`${PATH_TO_RAW}**/*.svg`])
-  // return src(`${PATH_TO_RAW}**/*.svg`)
     .pipe(svgo())
     .pipe(dest(PATH_TO_SOURCE));
-    // .pipe(dest(`${PATH_TO_SOURCE}`));
 }
 
 export function createStack() {

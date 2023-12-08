@@ -28,11 +28,9 @@
 }
 
 .user-bar__link {
-
   height: 16px;
   display: flex;
   column-gap: 8px;
-
 }
 
 .user-bar__text {
@@ -44,7 +42,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .user-bar__link:hover,
   .user-bar__link:focus {
     fill: var(--Base-Primary);
