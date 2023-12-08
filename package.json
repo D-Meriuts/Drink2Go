@@ -1,5 +1,7 @@
 {
-  "name": "htmlacademy-gulp-template",
+  "name": "drink2go",
+  "description": "Грейдирование профессии «Фронтенд-разработчик» Проект: Drink2Go",
+
   "version": "1.0.0",
   "private": true,
   "type": "module",

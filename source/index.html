@@ -9,6 +9,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
 
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+
+
   <!-- <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" crossorigin="anonymous">
@@ -67,7 +70,6 @@
                 <span class="user-bar__text">Войти</span>
 
               </a>
-              <!-- <span class="user-bar__text">Войти</span> -->
             </li>
             <li class="user-bar__item">
               <a class="user-bar__link" href="#!">
@@ -77,7 +79,6 @@
                 <span class="user-bar__text">Корзина</span>
 
               </a>
-              <!-- <span class="user-bar__text">Корзина</span> -->
             </li>
           </ul>
 
@@ -92,7 +93,15 @@
   </header>
 
   <main>
-    Main
+    <h1 class="visually-hidden"> Drink2Go Интернет-магазин кофейных напитков</h1>
+    <section class="slider"> слайдер</section>
+    <section class="features"> преимущества</section>
+    <section class="catalog"> каталог</section>
+    <section class="map map--nojs" id="map" style="min-height: 420px;">
+
+    </section>
+
+
   </main>
 
 
@@ -195,6 +204,9 @@
     </div>
 
   </footer>
+
+  <script src="vendor/leaflet/leaflet.js"></script>
+
   <script src="scripts/index.js" defer></script>
 </body>
 
