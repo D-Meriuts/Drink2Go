@@ -1,0 +1,18 @@
+.balloon {
+  background-color: var(--Base-White);
+  width: 270px;
+}
+
+.balloon__title {
+  color: var(--Base-Black);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.balloon__text, .balloon__phone, .balloon__lat-lng {
+  color: var(--Base-Black);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
