@@ -23,6 +23,12 @@ a:hover {
   text-decoration: none;
 }
 
+a:focus {
+  outline: 2px var(--Base-Primary) solid;
+  // padding: 2px 2px 0
+  // outline: none;
+}
+
 /* Common */
 
 // aside,

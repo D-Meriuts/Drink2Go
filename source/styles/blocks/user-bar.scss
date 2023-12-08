@@ -8,8 +8,8 @@
 }
 
 .user-bar__item {
-  display: flex;
-  column-gap: 8px;
+  // display: flex;
+  // column-gap: 8px;
   padding: 22px;
   cursor: pointer;
   border: none;
@@ -28,7 +28,11 @@
 }
 
 .user-bar__link {
+
   height: 16px;
+  display: flex;
+  column-gap: 8px;
+
 }
 
 .user-bar__text {
@@ -40,11 +44,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  .user-bar__item:hover svg {
-    fill: var(--Base-Primary);
-  }
 
-  .user-bar__item:hover .user-bar__text {
+  .user-bar__link:hover,
+  .user-bar__link:focus {
+    fill: var(--Base-Primary);
     color: var(--Base-Primary);
   }
 }
