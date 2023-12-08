@@ -21,6 +21,8 @@
 }
 
 .navigation__item {
+  background-color: var(--Base-White);
+
   border-top: 1px var(--Base-Secondary) solid;
 
   &:last-child {
@@ -57,14 +59,18 @@
 
   @media (min-width: $desktop-width) {
     padding: 32px 20px;
-    &:hover {
+    &:hover,
+    &:focus {
       color: var(--Base-Primary);
     }
+
+
   }
 }
 
 .navigation__link--active {
   @media (min-width: $tablet-width) {
+    color: var(--Base-Primary);
     border-bottom: 2px solid var(--Base-Primary);
     padding-bottom: 30px;
   }
