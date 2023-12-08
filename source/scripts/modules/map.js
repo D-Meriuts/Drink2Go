@@ -1,6 +1,5 @@
 function map() {
-  document.querySelector('map').classList.remove('map--nojs');
-
+  document.querySelector('.map').classList.remove('map--nojs');
 
   const map = L.map('map')
     .setView({
