@@ -63,27 +63,26 @@
     content: "";
     position: absolute;
     left: calc(50% - 26px);
-    top: 0px;
+    top: 0;
     width: 52px;
     height: 56px;
     background-repeat: no-repeat;
   }
 
   &:first-child::before {
-    background-image: url('../../images/icons/stack.svg#icon_speed');
-
+    background-image: url("../../images/icons/stack.svg#icon_speed");
   }
 
   &:nth-child(2)::before {
-    background-image: url('../../images/icons/stack.svg#icon_fit');
+    background-image: url("../../images/icons/stack.svg#icon_fit");
   }
 
   &:nth-child(3)::before {
-    background-image: url('../../images/icons/stack.svg#icon_energy');
+    background-image: url("../../images/icons/stack.svg#icon_energy");
   }
 
   &:last-child::before {
-    background-image: url('../../images/icons/stack.svg#icon_ecology');
+    background-image: url("../../images/icons/stack.svg#icon_ecology");
   }
 
   @media (min-width: $tablet-width) {
@@ -93,7 +92,7 @@
     padding-left: 66px;
 
     &::before {
-      left: 0px;
+      left: 0;
     }
   }
 
@@ -105,12 +104,9 @@
 
     &::before {
       left: calc(50% - 26px);
-      top: 0px;
+      top: 0;
     }
-
-
   }
-
 }
 
 .features__item-tittle {
