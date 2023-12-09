@@ -1,3 +1,7 @@
+.slider {
+  position: relative;
+}
+
 .slider__slide {
   display: grid;
   grid-template-columns: minmax(280px, 1fr);
