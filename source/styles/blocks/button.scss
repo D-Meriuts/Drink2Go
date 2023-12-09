@@ -1,0 +1,37 @@
+.button {
+  border-radius: 4px;
+  background-color: var(--Base-Primary);
+
+  color: var(--Base-White);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+
+  &:hover,
+  &:focus {
+    background-color: var(--Primary-Lighter);
+  }
+
+  &:active {
+    background-color: var(--Primary-Darker);
+  }
+
+  &:disabled {
+    background-color: var(--Base-Grey);
+  }
+}
+
+.button--slider {
+  padding: 8px 20px;
+  display: inline-block;
+}
+
+// кнопка добавить в корзину
+.button--cart {
+  color: var(--Base-White);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
