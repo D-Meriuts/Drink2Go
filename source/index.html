@@ -99,9 +99,71 @@
   </header>
 
   <main>
-    <h1 class="visually-hidden">Drink2Go Интернет-магазин кофейных напитков</h1>
-    <section class="slider">
-      <h2>слайдер</h2>
+
+    <!-- <h1 class="visually-hidden">Drink2Go Интернет-магазин кофейных напитков</h1> -->
+    <section class="promo">
+      <div class="slider">
+        <div class="slider__slide slider__slide--first">
+          <div class="slider__image">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="
+          images/slider/flat_white_desktop@1x.webp 1x,
+          images/slider/flat_white_desktop@2x.webp 2x">
+
+              <source type="image/webp" media="(min-width: 768px)" srcset="
+          images/slider/flat_white_tablet@1x.webp 1x,
+          images/slider/flat_white_tablet@2x.webp 2x">
+
+              <source type="image/webp" srcset="
+          images/slider/flat_white_mobile@1x.webp 1x,
+          images/slider/flat_white_mobile@2x.webp 2x">
+
+              <source type="image/png" media="(min-width: 1440px)" srcset="
+          images/slider/flat_white_desktop@1x.png 1x,
+          images/slider/flat_white_desktop@2x.png 2x">
+
+              <source type="image/png" media="(min-width: 768px)" srcset="
+          images/slider/flat_white_tablet@1x.png 1x,
+          images/slider/flat_white_tablet@2x.png 2x">
+
+              <img class="slider__picture" width="280" height="280" src="images/slider/flat_white_mobile@1x.png"
+                srcset="images/slider/flat_white_mobile@2x.png 2x" alt="банка кофе Декаф Флэт Уайт">
+            </picture>
+          </div>
+
+          <div class="slider__container">
+            <div class="slider__about">
+              <h2 class="visually-hidden">слайдер</h2>
+              <h4 class="slider__badge title title--h4">Новинка!</h4>
+              <h1 class="slider__title title title--h1">Декаф Флэт Уайт</h1>
+              <p class="slider__text text text--slider">Свежесваренный кофе без кофеина из Эфиопии с натуральным
+                фермерским
+                молоком — то,
+                что
+                нужно для расслабления после тяжёлого рабочего дня
+              </p>
+            </div>
+            <div class="slider__buy">
+              <ul class="slider__price price">
+                <li class="price__old">295₽</li>
+                <li class="price__current">225₽</li>
+              </ul>
+              <button class="slider__button button button--slider" type="button">Заказать</button>
+            </div>
+          </div>
+
+          <div class="slider__slider-controls slider-controls">
+            <button class="slider-controls__button slider-controls__button--current" type="button"
+              aria-label="1"></button>
+            <button class="slider-controls__button" type="button" aria-label="2"></button>
+            <button class="slider-controls__button" type="button" aria-label="3"></button>
+          </div>
+        </div>
+
+
+      </div>
+
+
     </section>
 
     <section class="features">
@@ -111,19 +173,19 @@
       <ul class="features__list">
         <li class="features__item">
           <h3 class="features__item-tittle title title--h3">Скорость</h3>
-          <p class="features__item-text text">Готовый напиток всегда под рукой — просто открой банку</p>
+          <p class="features__item-text text text--features">Готовый напиток всегда под рукой — просто открой банку</p>
         </li>
         <li class="features__item">
           <h3 class="features__item-tittle title title--h3">Удобство</h3>
-          <p class="features__item-text text">Легко помещается и в карман,и в маленькую сумочку</p>
+          <p class="features__item-text text text--features">Легко помещается и в карман,и в маленькую сумочку</p>
         </li>
         <li class="features__item">
           <h3 class="features__item-tittle title title--h3">Бодрость</h3>
-          <p class="features__item-text text">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+          <p class="features__item-text text text--features">Сбалансированная доза кофеина даст мощный заряд энергии</p>
         </li>
         <li class="features__item">
           <h3 class="features__item-tittle title title--h3">Экологичность</h3>
-          <p class="features__item-text text">Вся упаковка сделана из перерабатываемых материалов</p>
+          <p class="features__item-text text text--features">Вся упаковка сделана из перерабатываемых материалов</p>
         </li>
       </ul>
 
@@ -132,8 +194,9 @@
     <section class="catalog">
       <h2>каталог</h2>
     </section>
+
     <section class="map map--nojs none" id="map" style="min-height: 420px;">
-      <h2>карта</h2>
+      <h2 class="visually-hidden">карта</h2>
 
     </section>
 

@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     // text-align: left;
-    padding: 60px 30px 100px;
+    padding: calc(188px + 60px) 30px 100px;
   }
 
   @media (min-width: $desktop-width) {
@@ -107,10 +107,6 @@
       top: 0;
     }
   }
-}
-
-.features__item-tittle {
-  // padding-top: 66px;
 }
 
 .features__item-text {
