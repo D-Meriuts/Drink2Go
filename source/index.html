@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="styles/styles.css">
 
 
-<!--
+  <!--
   <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" crossorigin="anonymous">
@@ -41,8 +41,10 @@
           <div class="header__logo logo logo--header">
             <a href="#!">
               <picture>
-                <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo_desktop.svg" width="170" height="36">
-                <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo_tablet.svg" width="82" height="36">
+                <source media="(min-width: 1440px)" type="image/svg+xml" srcset="images/logo_desktop.svg" width="170"
+                  height="36">
+                <source media="(min-width: 768px)" type="image/svg+xml" srcset="images/logo_tablet.svg" width="82"
+                  height="36">
                 <img class="logo__image" src="images/logo_mobile.svg" alt="логотип сайта Drink2Go" width="32"
                   height="36">
               </picture>
@@ -98,10 +100,40 @@
 
   <main>
     <h1 class="visually-hidden">Drink2Go Интернет-магазин кофейных напитков</h1>
-    <section class="slider"><h2>слайдер</h2></section>
-    <section class="features"><h2>преимущества</h2></section>
-    <section class="catalog"><h2>каталог</h2></section>
-    <section class="map map--nojs" id="map" style="min-height: 420px;"><h2>карта</h2>
+    <section class="slider">
+      <h2>слайдер</h2>
+    </section>
+
+    <section class="features">
+      <h4 class="features__badge title title--h4">преимущества</h4>
+      <h2 class="features__title title title--h2">Главные причины выбрать Drink2Go</h2>
+
+      <ul class="features__list">
+        <li class="features__item">
+          <h3 class="features__item-tittle title title--h3">Скорость</h3>
+          <p class="features__item-text text">Готовый напиток всегда под рукой — просто открой банку</p>
+        </li>
+        <li class="features__item">
+          <h3 class="features__item-tittle title title--h3">Удобство</h3>
+          <p class="features__item-text text">Легко помещается и в карман,и в маленькую сумочку</p>
+        </li>
+        <li class="features__item">
+          <h3 class="features__item-tittle title title--h3">Бодрость</h3>
+          <p class="features__item-text text">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+        </li>
+        <li class="features__item">
+          <h3 class="features__item-tittle title title--h3">Экологичность</h3>
+          <p class="features__item-text text">Вся упаковка сделана из перерабатываемых материалов</p>
+        </li>
+      </ul>
+
+    </section>
+
+    <section class="catalog">
+      <h2>каталог</h2>
+    </section>
+    <section class="map map--nojs none" id="map" style="min-height: 420px;">
+      <h2>карта</h2>
 
     </section>
 
@@ -117,7 +149,8 @@
       <div class="footer__logo logo logo--footer">
         <a href="#!">
           <picture>
-            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo_desktop.svg" width="170" height="36">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo_desktop.svg" width="170"
+              height="36">
             <img class="logo__image" src="images/logo_tablet.svg" alt="логотип сайта Drink2Go" width="82" height="36">
           </picture>
         </a>
@@ -197,7 +230,8 @@
       <p class="copyright__text">Разработано в
         <span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
-            aria-label="Перейти на лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация»" target="_blank" rel="noopener noreferrer">
+            aria-label="Перейти на лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация»" target="_blank"
+            rel="noopener noreferrer">
             HTML Academy
             <svg class="copyright__icon" width="12" height="16">
               <use href="images/icons/stack.svg#logo_html_academy"></use>

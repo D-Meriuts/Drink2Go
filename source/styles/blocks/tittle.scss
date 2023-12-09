@@ -1,0 +1,52 @@
+.title {
+  color: var(--Base-Black);
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.title--h1 {
+  /* Slider Heading Mobile */
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.72px;
+
+  /* Slider Heading Desktop&Tablet */
+  @media (min-width: $tablet-width) {
+    font-size: 56px;
+    line-height: 80px;
+    letter-spacing: 1.12px;
+  }
+}
+
+.title--h2 {
+  /* Heading2 Mobile */
+  font-size: 24px;
+  line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    /* Heading2 Desktop&Tablet */
+    font-size: 42px;
+    line-height: 64px;
+  }
+}
+
+.title--h3 {
+  /* Heading3 Mobile */
+  font-size: 18px;
+  line-height: 32px;
+
+  @media (min-width: $tablet-width) {
+    /* Heading3 Desktop&Tablet */
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.title--h4 {
+  /* Heading4 */
+  color: var(--Base-Primary);
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.28px;
+}
