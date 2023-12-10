@@ -1,7 +1,10 @@
 .footer {
-  margin: 0;
   background-color: var(--Base-White);
+}
 
+.footer__wparrep {
+  margin: 0;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,7 +25,7 @@
   }
 }
 
-.footer__container {
+.social-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,7 +37,7 @@
   }
 }
 
-.footer__container,
+.social-content,
 .footer__nav,
 .footer__media,
 .footer__contacts {
@@ -63,7 +66,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .footer__container,
+  .social-content,
   .footer__nav,
   .footer__media,
   .footer__contacts {
