@@ -5,5 +5,5 @@ navigation();
 import createMap from './modules/map';
 createMap();
 
-import createSwiper from './modules/swiper';
-createSwiper();
+import swiper from './modules/swiper';
+swiper();

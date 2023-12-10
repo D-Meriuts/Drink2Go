@@ -1,6 +1,5 @@
 let Swiper;
-
-const createSwiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: false,
@@ -16,4 +15,4 @@ const createSwiper = new Swiper('.swiper', {
   },
 });
 
-export default createSwiper;
+export default swiper;
