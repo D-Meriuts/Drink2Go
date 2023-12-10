@@ -1,0 +1,64 @@
+// .cards {}
+
+.cards__list {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 280px);
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(auto-fill, 349px);
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(auto-fill, 317px);
+  }
+}
+
+.cards__item {
+  background-color: var(--Base-White);
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px 20px;
+}
+
+.cards__picture {
+  display: block;
+  margin: 0 auto;
+}
+
+.cards__title {
+  padding-top: 24px;
+  padding-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+}
+
+.cards__text {
+  padding-bottom: 16px;
+  min-height: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
+  }
+}
+
+.cards__buy {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+// .price {}
+
+// .price__current {}
+
+// .cards__button {}
+
+// .button {}
+
+// .button--cart {}
