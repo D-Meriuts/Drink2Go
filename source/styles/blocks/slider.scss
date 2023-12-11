@@ -83,6 +83,14 @@
   }
 }
 
+.slider__text {
+  min-height: 100px;
+
+  @media (min-width: $tablet-width) {
+    min-height: auto;
+  }
+}
+
 .slider__buy {
   display: flex;
   justify-content: center;

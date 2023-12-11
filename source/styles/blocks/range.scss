@@ -1,0 +1,167 @@
+// /* filters-bar and sort-bar section */
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range__filter {
+  width: 280px;
+  margin-top: 20px;
+}
+
+.range__controls {
+  position: relative;
+  height: 24px;
+  width: 280px;
+  margin-bottom: 24px;
+  background-color: transparent;
+  // background-color: rgb(0, 0, 0);
+
+  // padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.range__controls .range__scale {
+  height: 2px;
+  background: var(--Light-Grey);
+}
+
+.range__controls .range__bar {
+  width: 77%;
+  height: 2px;
+  background: var(--Primary-Lighter);
+}
+
+.range__toggle {
+  cursor: pointer;
+
+  &--min::before,
+  &--max::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px var(--Primary-Lighter) solid;
+    background-color: var(--Base-White);
+  }
+
+  &--min::before {
+    left: 0;
+  }
+
+  &--max::before {
+    right: 52px;
+  }
+
+  &--min:hover::after,
+  &--min:focus::after,
+  &--max:hover::after,
+  &--max:focus::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: var(--Primary-Opacity);
+    top: 4px;
+    border-radius: 50%;
+  }
+
+  &--min:hover::after,
+  &--min:focus::after {
+    left: 4px;
+  }
+
+  &--max:hover::after,
+  &--max:focus::after {
+    right: 56px;
+  }
+
+  &--min:active::before,
+  &--max:active::before {
+    border-color: var(--Base-Primary);
+  }
+
+  &--min:active::after,
+  &--max:active::after {
+    background-color: var(--Base-Primary);
+  }
+}
+
+.range:disabled {
+  .range__toggle {
+    cursor: auto;
+  }
+
+  .range__toggle::before {
+    border-color: var(--Base-Grey);
+  }
+
+  .range__bar,
+  .range__toggle::after {
+    background-color: var(--Base-Grey);
+  }
+
+  .range__toggle::after {
+    background-color: var(--Base-White);
+  }
+}
+
+.range__price-contols {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.range__price-contols span {
+  display: grid;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none; // Yeah, yeah everybody write about it
+}
+
+.range__input[type='number'],
+.range__input[type="number"]:hover,
+.range__input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+.range__price-contols .range__input {
+
+  width: 118px;
+  height: 40px;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 2px solid var(--Primary-Lighter);
+  background: var(--Base-White);
+
+
+  font-family: var(--font-main);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+
+  &::placeholder {
+    color: var(--Base-Grey);
+  }
+
+  &:focus-within {
+    border-color: var(--Primary-Darker);
+    outline: var(--Primary-Darker);
+  }
+}
+
+.range__price-contols .range__input:disabled {
+  color: var(--Base-Grey);
+  border-color: var(--Base-Grey);
+}

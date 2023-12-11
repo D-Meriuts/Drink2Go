@@ -1,7 +1,6 @@
 {
   "name": "drink2go",
   "description": "Грейдирование профессии «Фронтенд-разработчик» Проект: Drink2Go",
-
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -60,5 +59,8 @@
     "stylelint": "15.11.0",
     "stylelint-config-htmlacademy": "2.0.6",
     "w3c-html-validator": "1.6.1"
+  },
+  "dependencies": {
+    "swiper": "^11.0.5"
   }
 }
