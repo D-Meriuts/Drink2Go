@@ -1,0 +1,31 @@
+// .sorting {
+// }
+// .sorting__vars {
+// }
+
+.sorting {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+// .sorting select {
+
+// }
+
+// .catalog__sorting {
+//   display: flex;
+// }
+
+.sorting>select {
+  width: 100%;
+
+
+  font-family: var(--font-main);
+
+  color: var(--Base-Black);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+
+}

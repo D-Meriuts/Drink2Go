@@ -24,15 +24,42 @@
 }
 
 .button--slider,
-.button--cart {
+.button--cart,
+.button--submit,
+.button--reset {
   padding: 8px 20px;
   display: inline-block;
 }
 
+.button--submit,
+.button--reset {
+  width: 100%;
+}
+
+
+.button--reset {
+  background-color: var(--Base-White);
+  color: var(--Base-Primary);
+
+  &:hover,
+  &:focus {
+    color: var(--Base-White);
+  }
+}
+
 // кнопка добавить в корзину
 .button--cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
   color: var(--Base-White);
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+
+  & svg {
+    fill: var(--Base-White);
+  }
 }

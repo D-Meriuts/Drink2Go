@@ -1,0 +1,13 @@
+.form__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex: 1 0 auto;
+}
+
+.form__list {
+  display: grid;
+  gap: 20px;
+}

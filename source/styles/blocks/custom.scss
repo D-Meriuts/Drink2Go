@@ -1,0 +1,178 @@
+.custom {
+  position: relative;
+  cursor: pointer;
+  display: block;
+}
+
+.custom-radio span,
+.custom-checkbox span {
+  min-height: 24px;
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  position: relative;
+}
+
+.custom-radio span {
+  padding-left: 34px;
+}
+
+.custom-checkbox span {
+  padding-left: 52px;
+}
+
+
+/* создание в label псевдоэлемента  before со следующими стилями */
+.custom-radio span::before,
+.custom-checkbox span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px var(--Base-Grey) solid;
+}
+
+.custom-radio span::before {
+  border-radius: 50%;
+  background-color: var(--Base-White);
+}
+
+.custom-checkbox span::before {
+  background-color: var(--Base-Grey);
+  width: 42px;
+  height: 24px;
+  border-radius: 12px;
+}
+
+.custom-checkbox span::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--Base-White);
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+}
+
+/* стили при наведении курсора на радио и чекбокса */
+.custom-radio input:not(:disabled) + span:hover::before {
+  border-color: var(--Primary-Lighter);
+}
+
+.custom-radio input:not(:disabled) + span:hover::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: var(--Primary-Opacity);
+  left: 4px;
+  top: 4px;
+  border-radius: 50%;
+}
+
+.custom-radio input:not(:disabled):checked + span:hover::before {
+  border-color: var(--Primary-Darker);
+}
+
+.custom-radio input:not(:disabled):checked + span:hover::after {
+  background-color: var(--Base-Primary);
+}
+
+.custom-checkbox input:not(:disabled) + span:hover::before {
+  border-color: var(--Primary-Lighter);
+  background-color: var(--Primary-Opacity);
+}
+
+/* стили для активной радиокнопки и чекбокса (при нажатии на неё) */
+.custom-radio input:not(:disabled):active + span::after,
+.custom-checkbox input:not(:disabled):active + span::before {
+  background-color: var(--Base-Primary);
+}
+
+.custom-checkbox input:not(:disabled):active + span::before {
+  background-color: var(--Base-Primary);
+  border-color: var(--Base-Primary);
+}
+
+.custom-radio input:active + span::before {
+  border-color: var(--Base-Primary);
+}
+
+.custom-radio > input:active + span::after {
+  background-color: var(--Base-Primary);
+}
+
+/* стили для радиокнопки и чекбокса, находящейся в фокусе */
+.custom-radio input:focus:checked + span::after {
+  border-color: var(--Primary-Darker);
+  background-color: var(--Base-Primary);
+}
+
+.custom-checkbox input:focus:checked + span::before {
+  border-color: var(--Primary-Darker);
+  background-color: var(--Base-Primary);
+}
+
+// /* стили для радиокнопки и чекбокса, находящейся в фокусе и НЕ находящейся в состоянии checked */
+.custom-checkbox input:focus:not(:checked) + span::before {
+  background-color: var(--Primary-Opacity);
+  border-color: var(--Primary-Lighter);
+}
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+.custom-radio input:checked + span::before {
+  border-color: var(--Base-Primary);
+}
+
+.custom-radio > input:checked + span::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: var(--Base-Primary);
+  left: 4px;
+  top: 4px;
+  border-radius: 50%;
+}
+
+// /* стили для чекбокса, находящегося в состоянии checked */
+.custom-checkbox > input:checked + span::before {
+  background-color: var(--Base-Primary);
+  border-color: var(--Base-Primary);
+}
+
+.custom-checkbox > input:checked + span::after {
+  left: 20px;
+  top: 2px;
+}
+
+// /* стили для радиокнопки и чекбокса, находящейся в состоянии disabled */
+.custom-radio > input:disabled + span::before {
+  border-color: var(--Light-Grey);
+}
+
+.custom-radio > input:disabled + span::after {
+  background-color: var(--Light-Grey);
+}
+
+.custom-checkbox > input:disabled + span::before {
+  border-color: var(--Light-Grey);
+  background-color: var(--Light-Grey);
+}
+
+.custom-checkbox > input:disabled + span::after {
+  background-color: var(--Lightest-Grey);
+}
+
+.custom-checkbox > input:checked:disabled + span::after {
+  background-color: var(--Base-Grey);
+}
+
+.custom-checkbox > input:disabled + span,
+.custom-radio > input:disabled + span {
+  color: var(--Base-Grey);
+}
