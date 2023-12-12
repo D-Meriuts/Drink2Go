@@ -97,3 +97,10 @@
 .pagination__link--disabled .pagination__icon {
   fill: var(--Base-White);
 }
+
+.pagination__link--prev,
+.pagination__link--next {
+  @media (min-width: $tablet-width) {
+    padding: 8px 20px;
+  }
+}
