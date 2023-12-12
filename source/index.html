@@ -52,7 +52,7 @@
 
         <ul class="header__user-bar user-bar">
           <li class="user-bar__item">
-            <a class="user-bar__link" href="#!">
+            <a class="user-bar__link" href="#!" aria-label="Войти.">
               <svg class="user-bar__image" width="16" height="16">
                 <use href="images/icons/stack.svg#user"></use>
               </svg>
@@ -61,7 +61,7 @@
             </a>
           </li>
           <li class="user-bar__item">
-            <a class="user-bar__link" href="#!">
+            <a class="user-bar__link" href="#!"aria-label="Корзина.">
               <svg width="16" height="16">
                 <use href="images/icons/stack.svg#cart"></use>
               </svg>
@@ -129,7 +129,7 @@
                   <li class="price__old">295₽</li>
                   <li class="price__current">225₽</li>
                 </ul>
-                <button class="slider__button button button--slider" type="button">Заказать</button>
+                <button class="slider__button button button--slider" type="button" aria-label="Заказать напиток.">Заказать</button>
               </div>
             </div>
           </div>
@@ -160,7 +160,7 @@
               images/slider/espresso_tablet@2x.png 2x">
 
                 <img class="slider__picture" width="280" height="280" src="images/slider/espresso_mobile@1x.png"
-                  srcset="images/slider/espresso_mobile@2x.png 2x" alt="банка кофе Декаф Флэт Уайт">
+                  srcset="images/slider/espresso_mobile@2x.png 2x" alt="банка кофе Тройной Эспрессо">
               </picture>
             </div>
             <div class="slider__container">
@@ -176,7 +176,7 @@
                   <li class="price__old">395₽</li>
                   <li class="price__current">375₽</li>
                 </ul>
-                <button class="slider__button button button--slider" type="button">Заказать</button>
+                <button class="slider__button button button--slider" type="button" aria-label="Заказать напиток.">Заказать</button>
               </div>
             </div>
           </div>
@@ -207,7 +207,7 @@
               images/slider/lavender_tablet@2x.png 2x">
 
                 <img class="slider__picture" width="280" height="280" src="images/slider/lavender_mobile@1x.png"
-                  srcset="images/slider/lavender_mobile@2x.png 2x" alt="банка кофе Декаф Флэт Уайт">
+                  srcset="images/slider/lavender_mobile@2x.png 2x" alt="банка кофе Лавандовый Латте">
               </picture>
             </div>
             <div class="slider__container">
@@ -223,15 +223,15 @@
                   <li class="price__old">285₽</li>
                   <li class="price__current">265₽</li>
                 </ul>
-                <button class="slider__button button button--slider" type="button">Заказать</button>
+                <button class="slider__button button button--slider" type="button" aria-label="Заказать напиток.">Заказать</button>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev" tabindex="0"></div>
+      <div class="swiper-button-next" tabindex="0"></div>
     </section>
 
     <section class="features">
@@ -427,7 +427,7 @@
                 <ul class="price">
                   <li class="price__current">225₽</li>
                 </ul>
-                <button class="cards__button button button--cart" type="button">
+                <button class="cards__button button button--cart" type="button" aria-label="добавить товар в корзину.">
                   <svg width="20" height="16">
                     <use href="images/icons/stack.svg#add-in-cart"></use>
                   </svg>
@@ -438,14 +438,14 @@
             </li>
 
             <li class="cards__item">
-              <a href="#!">
+              <a href="#!" aria-label="Открыть окно товара.">
                 <picture>
                   <source type="image/webp" srcset="
                 images/catalog/coffee-can-2@1x.webp 1x,
                 images/catalog/coffee-can-2@2x.webp 2x">
 
                   <img class="cards__picture" width="130" height="188" src="images/catalog/coffee-can-2@1x.png"
-                    srcset="images/catalog/coffee-can-2@2x.png 2x" alt="напиток из каталога в белой банке">
+                    srcset="images/catalog/coffee-can-2@2x.png 2x" alt="напиток из каталога в синей банке">
                 </picture>
                 <h3 class="cards__title title title--h3">Декаф Флэт Уайт</h3>
               </a>
@@ -455,7 +455,7 @@
                 <ul class="price">
                   <li class="price__current">225₽</li>
                 </ul>
-                <button class="cards__button button button--cart" type="button">
+                <button class="cards__button button button--cart" type="button" aria-label="добавить товар в корзину.">
                   <svg width="20" height="16">
                     <use href="images/icons/stack.svg#add-in-cart"></use>
                   </svg>
@@ -465,14 +465,14 @@
             </li>
 
             <li class="cards__item">
-              <a href="#!">
+              <a href="#!" aria-label="Открыть окно товара.">
                 <picture>
                   <source type="image/webp" srcset="
                 images/catalog/coffee-can-3@1x.webp 1x,
                 images/catalog/coffee-can-3@2x.webp 2x">
 
                   <img class="cards__picture" width="130" height="188" src="images/catalog/coffee-can-3@1x.png"
-                    srcset="images/catalog/coffee-can-3@2x.png 2x" alt="напиток из каталога в белой банке">
+                    srcset="images/catalog/coffee-can-3@2x.png 2x" alt="напиток из каталога в черной банке">
                 </picture>
                 <h3 class="cards__title title title--h3">Декаф Флэт Уайт</h3>
               </a>
@@ -482,7 +482,7 @@
                 <ul class="price">
                   <li class="price__current">225₽</li>
                 </ul>
-                <button class="cards__button button button--cart" type="button">
+                <button class="cards__button button button--cart" type="button" aria-label="добавить товар в корзину.">
                   <svg width="20" height="16">
                     <use href="images/icons/stack.svg#add-in-cart"></use>
                   </svg>
@@ -492,14 +492,14 @@
             </li>
 
             <li class="cards__item">
-              <a href="#!">
+              <a href="#!" aria-label="Открыть окно товара.">
                 <picture>
                   <source type="image/webp" srcset="
                 images/catalog/coffee-can-4@1x.webp 1x,
                 images/catalog/coffee-can-4@2x.webp 2x">
 
                   <img class="cards__picture" width="130" height="188" src="images/catalog/coffee-can-4@1x.png"
-                    srcset="images/catalog/coffee-can-4@2x.png 2x" alt="напиток из каталога в белой банке">
+                    srcset="images/catalog/coffee-can-4@2x.png 2x" alt="напиток из каталога в пурпурной банке">
                 </picture>
                 <h3 class="cards__title title title--h3">Декаф Флэт Уайт</h3>
               </a>
@@ -509,7 +509,7 @@
                 <ul class="price">
                   <li class="price__current">225₽</li>
                 </ul>
-                <button class="cards__button button button--cart" type="button">
+                <button class="cards__button button button--cart" type="button" aria-label="добавить товар в корзину.">
                   <svg width="20" height="16">
                     <use href="images/icons/stack.svg#add-in-cart"></use>
                   </svg>
@@ -519,14 +519,14 @@
             </li>
 
             <li class="cards__item">
-              <a href="#!">
+              <a href="#!" aria-label="Открыть окно товара.">
                 <picture>
                   <source type="image/webp" srcset="
                 images/catalog/coffee-can-5@1x.webp 1x,
                 images/catalog/coffee-can-5@2x.webp 2x">
 
                   <img class="cards__picture" width="130" height="188" src="images/catalog/coffee-can-5@1x.png"
-                    srcset="images/catalog/coffee-can-5@2x.png 2x" alt="напиток из каталога в белой банке">
+                    srcset="images/catalog/coffee-can-5@2x.png 2x" alt="напиток из каталога в коричневой банке">
                 </picture>
                 <h3 class="cards__title title title--h3">Декаф Флэт Уайт</h3>
               </a>
@@ -536,7 +536,7 @@
                 <ul class="price">
                   <li class="price__current">225₽</li>
                 </ul>
-                <button class="cards__button button button--cart" type="button">
+                <button class="cards__button button button--cart" type="button" aria-label="добавить товар в корзину.">
                   <svg width="20" height="16">
                     <use href="images/icons/stack.svg#add-in-cart"></use>
                   </svg>
@@ -546,14 +546,14 @@
             </li>
 
             <li class="cards__item">
-              <a href="#!">
+              <a href="#!" aria-label="Открыть окно товара.">
                 <picture>
                   <source type="image/webp" srcset="
                 images/catalog/coffee-can-6@1x.webp 1x,
                 images/catalog/coffee-can-6@2x.webp 2x">
 
                   <img class="cards__picture" width="130" height="188" src="images/catalog/coffee-can-6@1x.png"
-                    srcset="images/catalog/coffee-can-6@2x.png 2x" alt="напиток из каталога в белой банке">
+                    srcset="images/catalog/coffee-can-6@2x.png 2x" alt="напиток из каталога в бежевой банке">
                 </picture>
                 <h3 class="cards__title title title--h3">Декаф Флэт Уайт</h3>
               </a>
@@ -563,7 +563,7 @@
                 <ul class="price">
                   <li class="price__current">225₽</li>
                 </ul>
-                <button class="cards__button button button--cart" type="button">
+                <button class="cards__button button button--cart" type="button" aria-label="добавить товар в корзину.">
                   <svg width="20" height="16">
                     <use href="images/icons/stack.svg#add-in-cart"></use>
                   </svg>
@@ -577,18 +577,18 @@
           <div class="pagination">
             <ul class="pagination__list">
               <li class="pagination__item">
-                <a class="pagination__link pagination__link--prev" href="#!">
+                <a class="pagination__link pagination__link--prev" href="#!" aria-label="на предыдущую страницу.">
                   <svg class="pagination__icon" width="10" height="10">
                     <use href="images/icons/stack.svg#arrow"></use>
                   </svg>
                   <span>Назад</span>
                 </a>
               </li>
-              <li class="pagination__item"><a class="pagination__link" href="#!">1</a></li>
-              <li class="pagination__item"><a class="pagination__link pagination__link--current" href="#!">2</a></li>
-              <li class="pagination__item"><a class="pagination__link" href="#!">3</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#!" aria-label="перейти на страницу 1.">1</a></li>
+              <li class="pagination__item"><a class="pagination__link pagination__link--current" href="#!" aria-label="вы на странице 2.">2</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#!" aria-label="перейти на страницу 3.">3</a></li>
               <li class="pagination__item">
-                <a class="pagination__link pagination__link--next" href="#!">
+                <a class="pagination__link pagination__link--next" href="#!" aria-label="на следующую страницу.">
                   <svg class="pagination__icon" width="10" height="10">
                     <use href="images/icons/stack.svg#arrow"></use>
                   </svg>
@@ -626,7 +626,7 @@
           <div class="social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link" href="#!" aria-label="VK">
+                <a class="social__link" href="#!" aria-label="VK.">
                   <svg class="social__link-logo" width="20" height="20">
                     <use href="images/icons/stack.svg#social_vk"></use>
                   </svg>
@@ -635,7 +635,7 @@
               </li>
 
               <li class="social__item">
-                <a class="social__link" href="#!" aria-label="Pinterest">
+                <a class="social__link" href="#!" aria-label="Pinterest.">
                   <svg class="social__link-logo" width="22" height="22">
                     <use href="images/icons/stack.svg#social_pinterest"></use>
                   </svg>
@@ -644,7 +644,7 @@
               </li>
 
               <li class="social__item">
-                <a class="social__link" href="#!" aria-label="OK">
+                <a class="social__link" href="#!" aria-label="OK.">
                   <svg class="social__link-logo" width="20" height="20">
                     <use href="images/icons/stack.svg#social_ok"></use>
                   </svg>
@@ -696,7 +696,7 @@
           <p class="copyright__text">Разработано в
             <span>
               <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
-                aria-label="Перейти на лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация»"
+                aria-label="Перейти на лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация»."
                 target="_blank" rel="noopener noreferrer">
                 HTML Academy
                 <svg class="copyright__icon" width="12" height="16">
