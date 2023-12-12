@@ -1,6 +1,5 @@
+/* global L:readonly */
 function createMap() {
-  document.querySelector('.map').classList.remove('map--nojs');
-  const L = window.L;
 
   const map = L.map('map')
     .setView({
@@ -61,7 +60,6 @@ function createMap() {
         },
       );
   });
-
 }
 
 export default createMap;
