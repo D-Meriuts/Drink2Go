@@ -22,11 +22,21 @@
   @media (min-width: $tablet-width) {
     flex: 1 0 222px;
   }
+
+  @media (min-width: $desktop-width) {
+    flex: 1 0 auto;
+  }
 }
 
 .form__supplements .form__title,
 .form__made-contry .form__title {
   margin-bottom: 20px;
+}
+
+.form__filter .form__title {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .form__buttons {
