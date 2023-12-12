@@ -1,6 +1,5 @@
 /* global L:readonly */
 function createMap() {
-  const L = window.L;
 
   const map = L.map('map')
     .setView({
