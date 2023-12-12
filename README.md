@@ -1,4 +1,5 @@
 затрачено времени 65-75ч
+https://github.com/D-Meriuts/Drink2Go.git
 # Сборка для HTML-курсов в HTML Academy
 
 Сборка работает на gulp 4 версии
