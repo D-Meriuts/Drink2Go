@@ -1,0 +1,61 @@
+.price-contols {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-contols span {
+  display: grid;
+}
+
+
+// input[type="number"]::-webkit-outer-spin-button,
+// input[type="number"]::-webkit-inner-spin-button {
+//   -webkit-appearance: none;
+// }
+
+// .range__input[type="number"],
+// .range__input[type="number"]:hover,
+// .range__input[type="number"]:focus {
+//   appearance: none;
+//   // -moz-appearance: textfield;
+// }
+
+.price-contols .price-contols__input {
+  width: 118px;
+  height: 40px;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 2px solid var(--Primary-Lighter);
+  background: var(--Base-White);
+
+
+  font-family: var(--font-main);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+
+  &::placeholder {
+    color: var(--Base-Grey);
+  }
+
+  &:focus-within {
+    border-color: var(--Primary-Darker);
+    outline: var(--Primary-Darker);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+  }
+}
+
+.price-contols .price-contols__input:disabled {
+  color: var(--Base-Grey);
+  border-color: var(--Base-Grey);
+}

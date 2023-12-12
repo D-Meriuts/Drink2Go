@@ -1,18 +1,35 @@
-// .cards {}
+// проверка грид
+.cards {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    grid-template-columns: 728px;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr;
+  }
+}
 
 .cards__list {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fill, 280px);
   gap: 20px;
+  margin-bottom: 40px;
+
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(auto-fill, 349px);
     gap: 30px;
+    margin-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
+    justify-content: end;
     grid-template-columns: repeat(auto-fill, 317px);
+    margin-bottom: 60px;
   }
 }
 
@@ -22,6 +39,15 @@
   flex-direction: column;
   padding: 40px 20px 20px;
   border-radius: 4px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 349px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 317px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -60,13 +86,3 @@
   display: flex;
   justify-content: space-between;
 }
-
-// .price {}
-
-// .price__current {}
-
-// .cards__button {}
-
-// .button {}
-
-// .button--cart {}

@@ -1,28 +1,38 @@
 // /* filters-bar and sort-bar section */
 
-.filter-item {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
 .range__filter {
   width: 280px;
+
   margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 222px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    width: 318px;
+  }
 }
 
 .range__controls {
   position: relative;
   height: 24px;
   width: 280px;
+
   margin-bottom: 24px;
   background-color: transparent;
-  // background-color: rgb(0, 0, 0);
-
-  // padding-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    width: 222px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 318px;
+  }
 }
 
 .range__controls .range__scale {
@@ -110,58 +120,4 @@
   .range__toggle::after {
     background-color: var(--Base-White);
   }
-}
-
-.range__price-contols {
-  display: flex;
-  gap: 18px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.range__price-contols span {
-  display: grid;
-}
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none; // Yeah, yeah everybody write about it
-}
-
-.range__input[type='number'],
-.range__input[type="number"]:hover,
-.range__input[type="number"]:focus {
-  appearance: none;
-  -moz-appearance: textfield;
-}
-
-.range__price-contols .range__input {
-
-  width: 118px;
-  height: 40px;
-  padding: 8px 10px;
-  border-radius: 4px;
-  border: 2px solid var(--Primary-Lighter);
-  background: var(--Base-White);
-
-
-  font-family: var(--font-main);
-  text-align: center;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-
-  &::placeholder {
-    color: var(--Base-Grey);
-  }
-
-  &:focus-within {
-    border-color: var(--Primary-Darker);
-    outline: var(--Primary-Darker);
-  }
-}
-
-.range__price-contols .range__input:disabled {
-  color: var(--Base-Grey);
-  border-color: var(--Base-Grey);
 }

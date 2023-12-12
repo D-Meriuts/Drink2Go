@@ -11,22 +11,13 @@
   <!-- <link rel="stylesheet" href="vendor/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css"> -->
 
-
   <link rel="stylesheet" href="styles/styles.css">
-
 
   <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-ExtraBold.woff2" as="font" crossorigin="anonymous">
-
-
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"> -->
-
 
   <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
@@ -93,8 +84,8 @@
   </header>
 
   <main>
-    <!-- <h1 class="visually-hidden">Drink2Go Интернет-магазин кофейных напитков</h1> -->
-    <section class="swiper none">
+    <h1 class="visually-hidden">Drink2Go Интернет-магазин кофейных напитков</h1>
+    <section class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="slider slider--first">
@@ -128,7 +119,7 @@
               <div class="slider__about">
                 <h2 class="visually-hidden">слайдер</h2>
                 <h4 class="slider__badge title title--h4">Новинка!</h4>
-                <h1 class="slider__title title title--h1">Декаф Флэт Уайт</h1>
+                <h2 class="slider__title title title--slider-heading">Декаф Флэт Уайт</h2>
                 <p class="slider__text text text--slider">Свежесваренный кофе без кофеина из Эфиопии с натуральным
                   фермерским
                   молоком — то,
@@ -179,7 +170,7 @@
               <div class="slider__about">
                 <h2 class="visually-hidden">слайдер</h2>
                 <h4 class="slider__badge title title--h4">Новинка!</h4>
-                <h1 class="slider__title title title--h1">Тройной Эспрессо</h1>
+                <h2 class="slider__title title title--slider-heading">Тройной Эспрессо</h2>
                 <p class="slider__text text text--slider">Мощнее укола адреналина, чернее самой тёмной ночи, этот
                   тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
               </div>
@@ -226,7 +217,7 @@
               <div class="slider__about">
                 <h2 class="visually-hidden">слайдер</h2>
                 <h4 class="slider__badge title title--h4">Новинка!</h4>
-                <h1 class="slider__title title title--h1">Лавандовый Латте</h1>
+                <h2 class="slider__title title title--slider-heading">Лавандовый Латте</h2>
                 <p class="slider__text text text--slider">Невероятное сочетание перуанской высокогорной арабики с
                   молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
               </div>
@@ -246,7 +237,7 @@
       <div class="swiper-button-next"></div>
     </section>
 
-    <section class="features none">
+    <section class="features">
       <div class="container">
         <h4 class="features__badge title title--h4">преимущества</h4>
         <h2 class="features__title title title--h2">Главные причины выбрать Drink2Go</h2>
@@ -277,12 +268,12 @@
 
     </section>
 
-    <section class="catalog">
-      <div class="catalog__wrapper container">
+    <section class="catalog container">
+      <div class="catalog__wrapper ">
 
         <div class="catalog__heading">
           <h4 class="title title--h4">Каталог</h4>
-          <h2 class="title title--h2">Каталог кофейных напитков</h2>
+          <h2 class="catalog__title title title--h2">Каталог кофейных напитков</h2>
         </div>
 
         <div class="catalog__filter">
@@ -290,35 +281,35 @@
 
           <form class="form" action="https://echo.htmlacademy.ru" method="get">
 
-            <fieldset class="filter-item range">
+            <fieldset class="form__filter range">
               <legend class="form__title title title--form">Цена</legend>
               <div class="range__filter">
                 <div class="range__controls">
                   <div class="range__scale">
-                    <div class="range__bar" style="width: 57%;">
+                    <div class="range__bar" style="width: 77%;">
                     </div>
                   </div>
                   <div class="range__toggle range__toggle--min" tabindex="0" style="left: 0"></div>
                   <div class="range__toggle range__toggle--max" tabindex="0" style="left: 20"></div>
                 </div>
 
-                <div class="range__price-contols">
-                  <label class="range__price range__price--min">
-                    <input class="range__input" type="number" name="min-price" value="" placeholder="0"
-                      autocomplete="off">
+                <div class="range__price-contols price-contols">
+                  <label class="range__price   range__price--min   price-contols__price price-contols__price--min">
+                    <input class="range__input price-contols__input" type="number" name="min-price" value=""
+                      placeholder="0" autocomplete="off">
                   </label>
                   <span>
-                    <svg class="social__link-logo" width="8" height="2">
+                    <svg width="8" height="2">
                       <use href="images/icons/stack.svg#dash"></use>
                     </svg></span>
-                  <label class="range__price range__price--max">
-                    <input class="range__input" type="number" name="max-price" value="900" autocomplete="off">
+                  <label class="range__price range__price--max price-contols__price price-contols__price--max">
+                    <input class="range__input price-contols__input" type="number" name="max-price" value="900"
+                      autocomplete="off">
                   </label>
                 </div>
               </div>
 
             </fieldset>
-
 
             <fieldset class="form__supplements">
               <legend class="form__title title title--form">Наличие молока</legend>
@@ -397,29 +388,26 @@
             </fieldset>
 
             <div class="form__buttons">
-
-              <button class="button button--submit" type="submit">Применить</button>
-              <button class="button button--reset" type="reset">Сбросить</button>
-
+              <div class="form__wrapper-buttons buttons">
+                <button class=" button button--submit" type="submit">Применить</button>
+                <button class=" button button--reset" type="reset">Сбросить</button>
+              </div>
             </div>
           </form>
         </div>
 
-        <div class="catalog__sorting">
-          <div class="sorting">
-            <!-- <h3 class="title title--form"> Сортировка:</h3> -->
-            <label class="title title--form" for="sort">Сортировка:</label>
-            <select name="sort" id="sort">
-              <option value="default">по умолчанию</option>
-              <option value="top-price">сначала дорогие</option>
-              <option value="low-price">сначала дешёвые</option>
-              <option value="top-rating">высокий рейтинг</option>
-            </select>
-          </div>
-
-        </div>
-
         <div class="catalog__cards cards">
+          <div class="catalog__sorting">
+            <div class="sorting">
+              <label class="sorting__title title title--form" for="sort">Сортировка:</label>
+              <select name="sorting__sort" id="sort">
+                <option value="default">по умолчанию</option>
+                <option value="top-price">сначала дорогие</option>
+                <option value="low-price">сначала дешёвые</option>
+                <option value="top-rating">высокий рейтинг</option>
+              </select>
+            </div>
+          </div>
           <ul class="cards__list">
 
             <li class="cards__item">
@@ -588,45 +576,37 @@
             </li>
 
           </ul>
-        </div>
 
-        <div class="pagination">
-          <ul class="pagination__list">
-            <li class="pagination__item">
-              <a class="pagination__link pagination__link--prev" href="#!">
-                <svg class="pagination__icon" width="10" height="10">
-                  <use href="images/icons/stack.svg#arrow"></use>
-                </svg>
-                <span>Назад</span>
-              </a>
-            </li>
-            <li class="pagination__item"><a class="pagination__link" href="#!">1</a></li>
-            <li class="pagination__item"><a class="pagination__link pagination__link--current" href="#!">2</a></li>
-            <li class="pagination__item"><a class="pagination__link" href="#!">3</a></li>
-            <li class="pagination__item">
-              <a class="pagination__link pagination__link--next" href="#!">
-                <svg class="pagination__icon" width="10" height="10">
-                  <use href="images/icons/stack.svg#arrow"></use>
-                </svg>
-                <span>Вперёд</span>
-              </a>
-            </li>
-          </ul>
+          <div class="pagination">
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <a class="pagination__link pagination__link--prev" href="#!">
+                  <svg class="pagination__icon" width="10" height="10">
+                    <use href="images/icons/stack.svg#arrow"></use>
+                  </svg>
+                  <span>Назад</span>
+                </a>
+              </li>
+              <li class="pagination__item"><a class="pagination__link" href="#!">1</a></li>
+              <li class="pagination__item"><a class="pagination__link pagination__link--current" href="#!">2</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#!">3</a></li>
+              <li class="pagination__item">
+                <a class="pagination__link pagination__link--next" href="#!">
+                  <svg class="pagination__icon" width="10" height="10">
+                    <use href="images/icons/stack.svg#arrow"></use>
+                  </svg>
+                  <span>Вперёд</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-
-
     </section>
 
-    <section class="map map--nojs none" id="map" style="min-height: 420px;">
+    <section class="map map--nojs" id="map" style="min-height: 420px;">
       <h2 class="visually-hidden">карта</h2>
     </section>
-
-
-
-
-
-
   </main>
   <footer class="footer">
     <h2 class="visually-hidden">Footer</h2>

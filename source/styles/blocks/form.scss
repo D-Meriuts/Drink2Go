@@ -1,13 +1,58 @@
-.form__buttons {
+.form {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  flex: 1 0 auto;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  max-width: 768px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.form__filter,
+.form__supplements,
+.form__made-contry {
+  flex: 1 0 minmax(280px, 30%);
+}
+
+.form__buttons {
+  flex: 1 0 100%;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 10px;
+  }
+}
+
+.form__title {
+  padding-bottom: 20px;
 }
 
 .form__list {
   display: grid;
   gap: 20px;
+}
+
+.form__wrapper-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    width: 277px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
 }
