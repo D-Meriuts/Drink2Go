@@ -5,5 +5,7 @@ navigation();
 import createMap from './modules/map';
 createMap();
 
+document.querySelector('.map').classList.remove('map--nojs');
+
 import swiper from './modules/swiper';
 swiper();
