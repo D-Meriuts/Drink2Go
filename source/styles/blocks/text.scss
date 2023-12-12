@@ -1,6 +1,5 @@
 .text {
   color: var(--Base-Black);
-  /* Slider Description Mobile */
   font-family: var(--font-main);
   font-size: 14px;
   font-style: normal;
@@ -8,8 +7,7 @@
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
-    /* Slider Description Desktop&Tablet */
-    font-size: 20px;
+    font-size: 16px;
     line-height: 32px;
   }
 }
@@ -19,6 +17,15 @@
   line-height: 24px;
 }
 
-// input:disabled .text--form {
-//   color: red;
-// }
+.text--slider {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.text--cards {
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

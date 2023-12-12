@@ -19,7 +19,14 @@
 .form__filter,
 .form__supplements,
 .form__made-contry {
-  flex: 1 0 minmax(280px, 30%);
+  @media (min-width: $tablet-width) {
+    flex: 1 0 222px;
+  }
+}
+
+.form__supplements .form__title,
+.form__made-contry .form__title {
+  margin-bottom: 20px;
 }
 
 .form__buttons {
@@ -28,10 +35,6 @@
   @media (min-width: $desktop-width) {
     margin-top: 10px;
   }
-}
-
-.form__title {
-  padding-bottom: 20px;
 }
 
 .form__list {
