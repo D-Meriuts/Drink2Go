@@ -17,6 +17,10 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+  }
 }
 
 .navigation__item {

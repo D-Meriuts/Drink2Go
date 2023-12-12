@@ -5,6 +5,7 @@
 
   @media (min-width: $tablet-width) {
     width: 222px;
+    margin-top: 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,7 +41,7 @@
 
 .range__controls .range__bar {
   width: 77%;
-  height: 2px;
+  height: 4px;
   background: var(--Primary-Lighter);
 }
 

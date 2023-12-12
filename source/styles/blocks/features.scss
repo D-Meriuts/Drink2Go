@@ -4,11 +4,11 @@
   background-color: var(--Base-White);
 
   @media (min-width: $tablet-width) {
-    padding: calc(60px) 30px 80px;
+    padding: 60px 30px 100px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 40px 120px;
+    padding: 100px 40px 95px;
   }
 }
 
@@ -36,7 +36,7 @@
     grid-template-columns: repeat(2, minmax(339px, 1fr));
     align-items: stretch;
     column-gap: 30px;
-    row-gap: 45px;
+    row-gap: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -90,13 +90,19 @@
 
   @media (min-width: $desktop-width) {
     align-items: center;
-    padding-top: 66px;
+    padding-top: 80px;
     padding-left: 0;
 
     &::before {
       left: calc(50% - 26px);
       top: 0;
     }
+  }
+}
+
+.features__item-tittle {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
   }
 }
 

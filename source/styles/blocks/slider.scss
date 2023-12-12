@@ -12,7 +12,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 600px 625px;
+    grid-template-columns: 600px 600px;
     column-gap: 30px;
     padding-top: 30px;
     padding-bottom: 60px;
@@ -39,7 +39,7 @@
 
   @media (min-width: $desktop-width) {
     order: 0;
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 }
 
